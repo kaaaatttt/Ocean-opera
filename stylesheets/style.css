@@ -1,0 +1,805 @@
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  min-width: 320px;
+}
+body {
+  background: #0000d8;
+}
+
+@font-face {
+  font-family: "TT Runs Educational Bold";
+  src: url("../fonts/TT Runs Educational Bold.ttf") format("truetype");
+  font-style: Bold;
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "TT Runs Educational Regular";
+  src: url("../fonts/TT Runs Educational Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+.headertext {
+  font-family: "TT Runs Educational Bold";
+  font-size: 128px;
+}
+
+p {
+  font-family: "TT Runs Educational Regular";
+  font-size: 75px;
+}
+
+.header {
+  overflow: hidden;
+  white-space: nowrap;
+  background-color: black;
+  color: rgb(251, 253, 255);
+  width: 100%;
+  line-height: 120px;
+  animation: headertext 7s linear infinite;
+  position: relative;
+}
+
+@keyframes headertext {
+  form {
+    text-indent: 100%;
+  }
+  to {
+    text-indent: -400%;
+  }
+}
+
+.header:hover {
+  animation-play-state: paused;
+}
+
+.firstgroup {
+  background-color: none;
+  width: 100%;
+  height: 739px;
+  display: flex;
+  position: relative;
+  margin-top: 50px;
+}
+.animone {
+  width: 100%;
+  height: 675px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: url("../img/1\ animation.png");
+  animation: animone 0.8s steps(1) infinite;
+}
+
+@keyframes animone {
+  0% {
+    background-position: 0px 0px;
+  }
+  15% {
+    background-position: 1142px 0px;
+  }
+  30% {
+    background-position: 2284px 0px;
+  }
+  45% {
+    background-position: 3426px 0px;
+  }
+  60% {
+    background-position: 0px 675px;
+  }
+  75% {
+    background-position: 1142px 675px;
+  }
+  90% {
+    background-position: 2284px 675px;
+  }
+  100% {
+    background-position: 3426px 675px;
+  }
+}
+
+.animtwo {
+  width: 775px;
+  height: 739px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background: url("../img/animation\ 2.png");
+  animation: animtwo 0.2s steps(1) infinite;
+  animation-play-state: paused;
+}
+
+.animtwo:hover {
+  animation-play-state: running;
+}
+
+@keyframes animtwo {
+  0% {
+    background-position: 0px top;
+  }
+  50% {
+    background-position: 776px top;
+  }
+  100% {
+    background-position: 0px top;
+  }
+}
+
+.pathone {
+  background-color: black;
+  width: 100%;
+  height: 250px;
+  position: relative;
+  display: flex;
+  margin-top: -3px;
+  align-items: center;
+  justify-content: center;
+}
+
+.secondgroup {
+  display: flex;
+  margin: 0 auto;
+  margin-top: 20px;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.s {
+  width: 160px;
+  height: 162px;
+  background: url("../img/sound/S.png");
+  position: absolute;
+  left: 16%;
+  animation: s 2.5s ease-in-out infinite;
+  animation-direction: alternate;
+  transition: all 1s ease-in-out;
+}
+@keyframes s {
+  0% {
+    top: 50px;
+    transform: rotate(-70deg);
+    filter: blur(7px);
+  }
+  100% {
+    top: 20px;
+    transform: rotate(30deg);
+  }
+}
+
+.o {
+  width: 190px;
+  height: 172px;
+  background: url("../img/sound/O.png");
+  position: absolute;
+  left: 29%;
+  animation: o 2.5s ease-in-out infinite;
+  animation-direction: alternate;
+  transition: all 1s ease-in-out;
+}
+@keyframes o {
+  0% {
+    top: 50px;
+    transform: rotate(-40deg);
+    filter: blur(7px);
+  }
+  100% {
+    top: 20px;
+    transform: rotate(40deg);
+  }
+}
+
+.u {
+  width: 164px;
+  height: 176px;
+  background: url("../img/sound/u.png");
+  position: absolute;
+  left: 45%;
+  animation: u 2.5s ease-in-out infinite;
+  animation-direction: alternate;
+  transition: all 1s ease-in-out;
+}
+@keyframes u {
+  0% {
+    top: 50px;
+    transform: rotate(20deg);
+    filter: blur(7px);
+  }
+  100% {
+    top: 20px;
+    transform: rotate(-60deg);
+  }
+}
+
+.n {
+  width: 171px;
+  height: 179px;
+  background: url("../img/sound/n.png");
+  position: absolute;
+  left: 58%;
+  animation: n 2.5s ease-in-out infinite;
+  animation-direction: alternate;
+  transition: all 1s ease-in-out;
+}
+@keyframes n {
+  0% {
+    top: 50px;
+    transform: rotate(-70deg);
+    filter: blur(7px);
+  }
+  100% {
+    top: 20px;
+    transform: rotate(20deg);
+  }
+}
+
+.d {
+  width: 193px;
+  height: 173px;
+  background: url("../img/sound/D.png");
+  position: absolute;
+  left: 72%;
+  animation: d 2.5s ease-in-out infinite;
+  animation-direction: alternate;
+  transition: all 1s ease-in-out;
+}
+@keyframes d {
+  0% {
+    top: 50px;
+    transform: rotate(0deg);
+    filter: blur(7px);
+  }
+  100% {
+    top: 20px;
+    transform: rotate(-80deg);
+  }
+}
+
+.flowers {
+  width: 100%;
+  height: 453px;
+  background: url("../img/animation5/цветочки.png");
+  margin-top: 25px;
+  position: relative;
+  animation: flowers 15s ease-in-out infinite;
+  animation-play-state: paused;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.noteone {
+  position: absolute;
+  background: url("../img/animation5/НОТА1.png");
+  width: 71px;
+  height: 98px;
+  left: 33%;
+  top: 60px;
+  rotate: 30deg;
+  animation: noteone 4s ease-in-out infinite;
+  animation-direction: alternate;
+  transition: all 1s ease-in-out;
+}
+@keyframes noteone {
+  0% {
+    transform: rotate(-50deg);
+    scale: 160%;
+  }
+  100% {
+    transform: rotate(30deg);
+    scale: 70%;
+  }
+}
+
+.noteone:hover {
+  filter: blur(15px);
+}
+
+.notetwo {
+  position: absolute;
+  background: url("../img/animation5/НОТА1.png");
+  width: 71px;
+  height: 98px;
+  left: 58%;
+  top: 280px;
+  rotate: -40deg;
+  animation: notetwo 3s ease-in-out infinite;
+  animation-direction: alternate;
+  transition: all 1s ease-in-out;
+}
+@keyframes notetwo {
+  0% {
+    transform: rotate(60deg);
+    scale: 70%;
+  }
+  100% {
+    transform: rotate(-20deg);
+    scale: 150%;
+  }
+}
+.notetwo:hover {
+  filter: blur(15px);
+}
+
+.texttwo {
+  overflow: hidden;
+  white-space: nowrap;
+  background-color: black;
+  color: rgb(251, 253, 255);
+  width: 100%;
+  height: 80px;
+  line-height: 80px;
+  animation: texttwo 7s linear infinite;
+  position: relative;
+  margin-top: -20px;
+}
+
+@keyframes texttwo {
+  form {
+    text-indent: 100%;
+  }
+  to {
+    text-indent: -100%;
+  }
+}
+
+.aroundradio {
+  position: relative;
+}
+
+.radio {
+  margin-left: auto;
+  margin-right: auto;
+  background: url("../img/radio/booo.png");
+  width: 1295px;
+  height: 723px;
+  position: relative;
+  margin-top: 100px;
+}
+
+.tochka {
+  height: 5px;
+  width: 5px;
+  background-color: rgb(255, 255, 255);
+  margin-left: 200px;
+  margin-top: 260px;
+  position: absolute;
+  animation: tochka 0.9s ease-in-out infinite;
+  transition: all 1s ease-in-out;
+  border-radius: 50%;
+}
+@keyframes tochka {
+  0% {
+    filter: blur(1px);
+    scale: 1%;
+  }
+  50% {
+    filter: blur(2px);
+    scale: 150%;
+  }
+  100% {
+    filter: blur(1px);
+    scale: 1%;
+  }
+}
+
+.locator {
+  width: 74px;
+  height: 74px;
+  background: url("../img/radio/locator.png");
+  margin-left: 177px;
+  margin-top: 213px;
+  position: absolute;
+  animation: locator 4.5s linear infinite;
+}
+
+@keyframes locator {
+  from {
+    transform: rotatez(5deg);
+  }
+  to {
+    transform: rotatez(365deg);
+  }
+}
+
+.but {
+  width: 55px;
+  height: 55px;
+  position: absolute;
+  background: url("../img/radio/Group\ 105.png");
+  margin-top: 365px;
+  margin-left: 472px;
+}
+
+.but:hover {
+  background: url("../img/radio/Group\ 120.png");
+  width: 59px;
+  height: 59px;
+  margin-top: 363px;
+  margin-left: 470px;
+}
+
+.butone {
+  width: 63px;
+  height: 22px;
+  background: url("../img/radio/Group\ 108.png");
+  margin-top: 462px;
+  margin-left: 472px;
+  position: absolute;
+}
+
+.butone:hover {
+  background: url("../img/radio/Group\ 113.png");
+  width: 65px;
+  height: 25px;
+  margin-top: 461px;
+  margin-left: 471px;
+}
+
+.buttwo {
+  width: 63px;
+  height: 22px;
+  background: url("../img/radio/Group\ 109.png");
+  margin-top: 462px;
+  margin-left: 545px;
+  position: absolute;
+}
+.buttwo:hover {
+  background: url("../img/radio/Group\ 114.png");
+  width: 65px;
+  height: 27px;
+  margin-top: 461px;
+  margin-left: 543px;
+}
+
+.butthree {
+  width: 63px;
+  height: 22px;
+  background: url("../img/radio/Group\ 111.png");
+  margin-top: 462px;
+  margin-left: 616.5px;
+  position: absolute;
+}
+.butthree:hover {
+  background: url("../img/radio/Group\ 116.png");
+  width: 65px;
+  height: 25px;
+  margin-top: 461px;
+  margin-left: 615px;
+}
+
+.butfour {
+  width: 63px;
+  height: 22px;
+  background: url("../img/radio/Group\ 112.png");
+  margin-top: 462px;
+  margin-left: 690px;
+  position: absolute;
+}
+
+.butfour:hover {
+  background: url("../img/radio/Group\ 117.png");
+  width: 65px;
+  height: 25px;
+  margin-top: 461px;
+  margin-left: 688px;
+}
+.butfour:hover ~ .kolecoone {
+  animation-play-state: paused;
+}
+.butfour:hover ~ .kolecotwo {
+  animation-play-state: paused;
+}
+
+.butfive {
+  width: 63px;
+  height: 22px;
+  background: url("../img/radio/Group\ 110.png");
+  margin-top: 462px;
+  margin-left: 762px;
+  position: absolute;
+}
+.butfive:hover {
+  background: url("../img/radio/Group\ 115.png");
+  width: 65px;
+  height: 25px;
+  margin-top: 461px;
+  margin-left: 760.4px;
+}
+/* .butfive:hover ~ .boooost {
+  animation-play-state: running;
+} */
+
+.volume {
+  background: url("../img/radio/volume.png");
+  position: absolute;
+  width: 217px;
+  height: 78px;
+  margin-left: 991px;
+  margin-top: 211.6px;
+  animation: volume 0.4s steps(1) infinite;
+}
+@keyframes volume {
+  0% {
+    background-position: 0px;
+  }
+  50% {
+    background-position: 217px;
+  }
+  100% {
+    background-position: 434px;
+  }
+}
+
+.boooost {
+  background: url("../img/radio/Group\ 176.png");
+  position: absolute;
+  width: 1187px;
+  height: 376px;
+  margin-left: 60px;
+  margin-top: 350px;
+  animation: boooost 0.6s steps(1) infinite;
+  /* animation-play-state: paused; */
+}
+
+@keyframes boooost {
+  0% {
+    background-position: 0px 0px;
+  }
+  30% {
+    background-position: 1187px 0px;
+  }
+  70% {
+    background-position: 2374px 0px;
+  }
+  100% {
+    background-position: 0px 0px;
+  }
+}
+
+.window {
+  width: 570px;
+  height: 78px;
+  /* background-color: brown; */
+  position: relative;
+  overflow: hidden;
+  left: 27%;
+  padding-top: 22.5%;
+}
+
+.veclorline {
+  background: url("../img/radio/linia.png");
+  position: absolute;
+  /* background-color: aqua; */
+  width: 1169px;
+  height: 34px;
+  bottom: 0px;
+  animation: vector 10s linear infinite;
+}
+
+.backk {
+  position: absolute;
+  width: 450px;
+  height: 13px;
+  /* background-color: darkorange; */
+  background: url("../img/12\ 21\ 33\ 47\ 53\ 60\ 72\ 80\ 88\ 90\ 92\ 94\ 96\ 98.png");
+  left: 32%;
+  top: 30%;
+}
+
+@keyframes vector {
+  from {
+    transform: translate(100%);
+  }
+  to {
+    transform: translate(-100%);
+  }
+}
+
+.kolecoone {
+  width: 94px;
+  height: 94px;
+  position: absolute;
+  background: url("../img/radio/Group\ 106.png");
+  bottom: 0px;
+  margin-left: 38.8%;
+  margin-bottom: 6.1%;
+  animation: kolecoone 5s ease-in-out infinite;
+  transition: 1s;
+}
+
+@keyframes kolecoone {
+  0% {
+    transform: rotate(-50deg);
+  }
+  50% {
+    transform: rotate(230deg);
+  }
+  100% {
+    transform: rotate(-50deg);
+  }
+}
+
+.kolecotwo {
+  width: 94px;
+  height: 94px;
+  position: absolute;
+  background: url("../img/radio/Group\ 107.png");
+  bottom: 0px;
+  margin-left: 54.1%;
+  margin-bottom: 6.1%;
+  animation: kolecotwo 10s ease-in-out infinite;
+  transition: 1s;
+}
+
+@keyframes kolecotwo {
+  0% {
+    transform: rotate(91deg);
+  }
+  50% {
+    transform: rotate(-190deg);
+  }
+  100% {
+    transform: rotate(91deg);
+  }
+}
+
+.textthree {
+  overflow: hidden;
+  white-space: nowrap;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  width: 100%;
+  height: 80px;
+  line-height: 80px;
+  animation: textthree 3s linear infinite;
+  position: relative;
+  margin-top: 20px;
+}
+
+@keyframes textthree {
+  form {
+    text-indent: 100%;
+  }
+  to {
+    text-indent: -100%;
+  }
+}
+
+.marquee-infinite div {
+  width: 100%;
+  overflow: hidden;
+  animation: marquee-infinite 5s linear infinite;
+  justify-content: space-around;
+  transition: 1s;
+}
+
+@keyframes marquee-infinite {
+  0% {
+    transform: translatex(100%);
+  }
+  0% {
+    transform: translate(-100%);
+  }
+}
+
+.marquee-infinite img {
+  width: 100%;
+  white-space: wrap;
+  overflow-y: hidden;
+}
+
+.textfour {
+  overflow: hidden;
+  white-space: nowrap;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  width: 100%;
+  height: 80px;
+  line-height: 80px;
+  animation: textthree 3s linear infinite;
+  position: relative;
+}
+
+.sectionone {
+  width: 100%;
+}
+
+.lastanimation {
+  position: relative;
+  width: 100%;
+  /* background-color: bisque; */
+  height: 300px;
+  margin-top: 8%;
+  overflow: hidden;
+  white-space: wrap;
+}
+
+.waveone {
+  position: absolute;
+  background: url("../img/waves/volna1.png");
+  width: 100%;
+  height: 300px;
+  background-repeat: no-repeat;
+}
+.wavetwo {
+  position: absolute;
+  background: url("../img/waves/volna2.png");
+  width: 100%;
+  height: 300px;
+  /* background-repeat: no-repeat; */
+  animation: wavetwo 2.5s ease-in-out infinite;
+  animation-direction: alternate;
+  transition: all 1s ease-in-out;
+}
+@keyframes wavetwo {
+  0% {
+    top: 50px;
+    transform: rotatey(40deg);
+  }
+  100% {
+    top: 10px;
+    transform: rotatey(40deg);
+  }
+}
+.wavethree {
+  position: absolute;
+  background: url("../img/waves/volna3.png");
+  width: 100%;
+  height: 300px;
+  animation: wavethree 2.5s ease-in-out infinite;
+  animation-direction: alternate;
+  transition: all 1s ease-in-out;
+  /* background-repeat: no-repeat; */
+}
+@keyframes wavethree {
+  0% {
+    top: 60px;
+    transform: rotatey(40deg);
+  }
+  100% {
+    top: 50px;
+    transform: rotatey(40deg);
+  }
+}
+
+.wavefour {
+  position: absolute;
+  background: url("../img/waves/volna4.png");
+  width: 100%;
+  height: 300px;
+}
+
+.wavefive {
+  position: absolute;
+  background: url("../img/waves/volna5.png");
+  width: 300%;
+  height: 600px;
+  /* background-repeat: no-repeat; */
+}
+.wavesix {
+  position: absolute;
+  background: url("../img/waves/volna6.png");
+  width: 100%;
+  height: 600px;
+  /* background-repeat: no-repeat; */
+}
+
+.last {
+  width: 100%;
+  height: 200px;
+  background-color: black;
+}
+
+.log {
+  position: absolute;
+  width: 100%;
+  height: 200px;
+  background: url("../img/last.png");
+  background-repeat: no-repeat;
+}
